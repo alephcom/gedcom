@@ -6,7 +6,7 @@ Status](https://travis-ci.org/ligurio/gedcom-tools.svg?branch=master)](https://t
 Gedcom is a format for storing genealogical information designed by The Church
 of Jesus Christ of Latter-Day Saints (http://www.lds.org).
 
-### Импорт файла GEDCOM в SQLite
+### Importing a GEDCOM file into SQLite
 
 This module allows to converting data in GEDCOM format to SQLite DB.
 
@@ -34,7 +34,7 @@ sqlite> -- "Total number of birth dates:"
 sqlite> SELECT COUNT(*) FROM person_st WHERE birt_date IS NOT "";
 ```
 
-### Проверка файла GEDCOM на ошибки.
+### Checking a GEDCOM file for errors.
 
 ```
 $ gedcom -file samples/bronte.ged
@@ -62,10 +62,9 @@ Family (F003)
 EP106: child doesn't inherit father's surname
 ```
 
-### Родословная из социальной сети
+### Family tree from social network
 
-Приложение строит генеалогическое дерево на основании данных из социальных
-сетей. Пока реализована поддержка только для ВКонтакте.
+The application builds a family tree based on data from social networks. So far, support has been implemented only for VKontakte.
 
 Facebook:
 
